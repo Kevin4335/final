@@ -1,0 +1,211 @@
+body{
+    background-color: 	#3C3C3C;
+}
+
+nav{
+    background-color: #000080;
+    border:solid 4px black;
+    border-radius: 0px 30px 30px 30px;
+    position:fixed;
+    width:98%;
+    top:0px;
+    z-index: 10000;
+}
+
+.breaker{
+    height:60px;
+}
+
+.logo{
+    padding-left:20px;
+}
+
+nav>a{
+    color:#CCE0D0;
+    font-family: "Audiowide", Georgia;
+    font-size: 22px;
+    padding-left: 75px;
+    padding-right:30px;
+    padding-top:13px;
+    float:right;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    padding-top:5px;
+}
+
+h1{
+    text-align:center;
+    color:#CCE0D0;
+    font-family: "Audiowide", Georgia;
+}
+
+h2{
+    text-align:center;
+    color:#CCE0D0;
+    font-family: "Audiowide", Georgia;
+}
+
+p{
+    color:#CCE0D0;
+    font-family: "Audiowide", Georgia;
+    line-height: 30px;
+}
+
+.summary{
+    margin-right:20%;
+    margin-left:20%;
+}
+
+.about-image{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:#CCE0D0 solid 4px;
+    border-radius: 0px 30px 30px 30px;
+}
+
+img{
+    border:#CCE0D0 solid 4px;
+    border-radius: 0px 30px 30px 30px;
+}
+
+.logo{
+    border:none;
+    border-radius:0px 0px 0px 0px;
+}
+
+.cssbox_close{
+    font-family: "Audiowide", Georgia;
+}
+
+.gallery-container{
+    display:grid;
+    padding-top:20px;   
+    padding-bottom:40px;
+    padding-left:40px;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+figure{
+    text-align: center;
+}
+
+figure>p{
+    font-size:10px;
+}
+
+.cssbox_thumb:hover{
+    border:solid 4px #4068D4;
+    cursor: zoom-in;
+}
+
+.protoss-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left:20%;
+    margin-right:5%;
+    padding-bottom:5%;
+    gap:3em;
+}
+
+.cardContainer{
+    position:relative;
+    width:256.953px;
+    height:200px;
+    padding-bottom:30px;
+}
+
+.card{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transition: all 1s ease;
+
+    
+}
+
+
+.card-image{
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+    border:none;
+    border-radius:30px 30px 30px 30px;
+    box-shadow: 10px 10px 10px #0ff;
+    animation:5s;
+    animation-name: blueFire;
+    animation-iteration-count: infinite;
+
+    backface-visibility: hidden;
+
+    
+}
+
+.card-description{
+    position:absolute;
+    width:100%;
+    height:100%; 
+
+    border:none;
+    border-radius:30px 30px 30px 30px;
+    padding:4px;
+    box-shadow: 10px 10px 10px #0ff;
+    animation:5s;
+    animation-name: blueFire;
+    animation-iteration-count: infinite;
+
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+
+    text-align: center;
+    font-family: "Audiowide", Georgia;
+    background-color:#1c2c34;
+
+    color:#CCE0D0;
+    
+}
+
+.description{
+    line-height: 25px;
+    padding-left:7%;
+    padding-right: 7%;
+    font-size:12px;
+    text-align: center;
+    color:#CCE0D0;
+    font-family: "Audiowide", Georgia;
+}
+
+.card:hover{
+    transform:rotateY(180deg);
+}
+
+@keyframes blueFire {
+    0% {box-shadow: 10px 10px 10px #3093A1;}
+    25%{box-shadow:10px 10px 22px #00FFF9}
+    50% {box-shadow: 10px 10px 10px #66979E;}
+    75% {box-shadow: 10px 10px 22px #90F9FF;}
+    100% {box-shadow: 10px 10px 10px #3093A1;}
+}
+
+.card-image:hover{
+    border:none;
+    cursor:pointer;
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gallery-gif{
+        visibility: hidden;
+    }
+    
+}
