@@ -302,7 +302,9 @@ build>h3{
         padding-bottom:30px;
     }
 
-    
+    .cardContainer{
+        overflow:hidden;
+    }
 
 }
 
