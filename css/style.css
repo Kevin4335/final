@@ -6,7 +6,7 @@ nav{
     background-color: #000080;
     border:solid 4px black;
     border-radius: 0px 30px 30px 30px;
-    position:fixed;
+    height:190px;
     width:98%;
     top:0px;
     z-index: 10000;
@@ -33,7 +33,9 @@ nav>a{
 a{
     text-decoration: none;
 }
-
+.gallery-container{
+    display:inline-block;
+}
 .logo{
     padding-top:5px;
 }
@@ -63,6 +65,8 @@ p{
 
 .about-image{
     display:block;
+    width:90%;
+    height:auto;
     margin-left:auto;
     margin-right:auto;
     margin-top:20px;
@@ -83,17 +87,6 @@ img{
 
 .cssbox_close{
     font-family: "Audiowide", Georgia;
-}
-
-.gallery-container{
-    
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width:80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top:20px;   
-    padding-bottom:10px;
 }
 
 figure{
@@ -120,8 +113,8 @@ figure>p{
 
 .cardContainer{
     position:relative;
-    width:256.953px;
-    height:200px;
+    width:128px;
+    height:100px;
     padding-bottom:30px;
 }
 
@@ -168,7 +161,7 @@ figure>p{
 
     backface-visibility: hidden;
     transform:rotateY(180deg);
-
+    overflow:scroll;
     text-align: center;
     font-family: "Audiowide", Georgia;
     background-color:#1c2c34;
@@ -184,6 +177,7 @@ figure>p{
     font-size:12px;
     text-align: center;
     color:#CCE0D0;
+    
     font-family: "Audiowide", Georgia;
 }
 
@@ -222,7 +216,7 @@ build{
 
     margin-left: auto;
     margin-right: auto;
-    width:30%;
+    width:100%;
 
     line-height: 20px;
     font-size:12px;
@@ -251,5 +245,80 @@ build>h3{
     .gallery-gif{
         visibility: hidden;
     }
+    .card-description{
+        animation:none;
+    }
     
+}
+
+@media viewport, screen and (min-width: 810px){
+    
+    
+    .about-image{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:20px;
+        height:300px;
+        width:auto;
+        margin-bottom:20px;
+        border:#CCE0D0 solid 4px;
+        border-radius: 0px 30px 30px 30px;
+    }
+
+    nav{
+        background-color: #000080;
+        border:solid 4px black;
+        border-radius: 0px 30px 30px 30px;
+        position:fixed;
+        width:98%;
+        height:auto;
+        top:0px;
+        z-index: 10000;
+    }
+
+    .breaker{
+        height:60px;
+    }
+
+    build{
+        display:none;
+        border:#CCE0D0 solid 4px;
+        border-radius: 30px 30px 30px 30px;
+    
+        margin-left: auto;
+        margin-right: auto;
+        width:30%;
+    
+        line-height: 20px;
+        font-size:12px;
+        color:#CCE0D0;
+        font-family: "Audiowide", Georgia;
+    }
+    .cardContainer{
+        position:relative;
+        width:256.953px;
+        height:200px;
+        padding-bottom:30px;
+    }
+
+    
+
+}
+
+
+@media viewport, screen and (min-width: 1080px){
+    
+    .gallery-container{
+    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top:20px;   
+        padding-bottom:10px;
+    }
+    #terran-gallery{
+        margin-left: auto;
+        margin-right:auto;
+    }
+
 }
