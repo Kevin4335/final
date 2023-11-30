@@ -303,7 +303,7 @@ build>h3{
     }
 
     .card-description{
-        overflow:auto;
+        overflow:hidden;
     }
 
 }
